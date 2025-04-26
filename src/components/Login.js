@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';  // ADD THIS
+import { useNavigate } from 'react-router-dom';  
 
 const Login = () => {
-  const navigate = useNavigate(); // ADD THIS
+  const navigate = useNavigate(); 
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,7 +23,7 @@ const Login = () => {
   
       localStorage.setItem('token', 'dummyToken');
       navigate('/tasks');
-      window.location.reload(); // 👉 reloads to refresh isLoggedIn state
+      window.location.reload(); 
   
     } catch (err) {
       setError('Something went wrong. Please try again.');
